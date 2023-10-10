@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "venv/libros.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "venv/libros.py"
+    }
+  ]
+}
